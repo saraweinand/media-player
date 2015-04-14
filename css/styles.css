@@ -8,67 +8,101 @@
 }
 
 body {
-  color: #384047;
+  background: #8C877D;
 }
 
 .wrapper {
   max-width: 90%;
   margin: 10px auto;
   padding: 10px 20px;
-  background: #f4f7f8;
   border-radius: 8px;
 }
 
-h1, h2 {
-  margin: 30px 0;
+h1 {
   text-align: center;
+  font-family: 'Lato' sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #BF5239;
 }
+
+h3 {
+  text-align: center;
+  font-family: 'Lato' sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #BF5239;
+}
+
 
 
 /* Your Custom Skin */
-video, audio, .mejs-colin {
-  margin: 0 auto;
+.wrapper {
+  width: 80%;
   display: block;
+  margin: 0 auto;
+
 }
 
-.mejs-colin .mejs-controls {
-  background: rgba(56,64,71,0.98);
-  height: 30px;
+.video_container {
+  width: 49.5%;
+  display: inline-block;
+  margin: 2.5% auto;
 }
 
-.mejs-colin .mejs-controls .mejs-button button {
-  outline: none;
+video, .mejs-wmp {
+  margin: 0 auto;
+  display: inline-block;
+
 }
 
-.mejs-colin .mejs-controls .mejs-captions-button {
+
+
+.mejs-wmp .mejs-controls .mejs-captions-button {
   margin: 0 7px;
 }
 
-.mejs-colin .mejs-controls .mejs-captions-selector {
+.mejs-controls .mejs-button button {
+  visibility: visible;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+  margin: 7px 5px;
+  padding: 0;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border: 0;
+  background: transparent url(../media/controls.svg) no-repeat;
+}
+
+.mejs-wmp .mejs-controls .mejs-captions-selector {
   background: rgba(56,64,71,0.98);
   width: 100px;
   right: auto;
 }
 
-.mejs-colin .mejs-controls .mejs-time-rail {
+.mejs-wmp .mejs-controls .mejs-time-rail {
   padding: 0;
 }
 
-.mejs-colin .mejs-controls .mejs-time-rail span {
+.mejs-wmp .mejs-controls .mejs-time-rail span {
   height: 100%;
   border-radius: 0px;
 }
 
-.mejs-colin .mejs-controls .mejs-time-rail .mejs-time-total,
-.mejs-colin .mejs-controls .mejs-time-rail .mejs-time-loaded,
-.mejs-colin .mejs-controls .mejs-time-rail .mejs-time-buffering,
-.mejs-colin .mejs-controls .mejs-time-rail .mejs-time-handle {
-  background: #2d3339;
+.mejs-wmp .mejs-controls .mejs-time-rail .mejs-time-total,
+.mejs-wmp .mejs-controls .mejs-time-rail .mejs-time-loaded,
+.mejs-wmp .mejs-controls .mejs-time-rail .mejs-time-buffering,
+.mejs-wmp .mejs-controls .mejs-time-rail .mejs-time-handle {
+  background: #036B94;
   margin: 0;
 }
 
-.mejs-colin .mejs-controls .mejs-time-rail .mejs-time-current {
-  background: #ff9900;
+.mejs-wmp .mejs-controls .mejs-time-rail .mejs-time-current {
+  background: #025373;
 }
 
 .mejs-container .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-float {
@@ -79,6 +113,31 @@ video, audio, .mejs-colin {
   font-size: 13px;
   color: #FFF;
 }
+
+.mejs-controls {
+  visibility: visible;
+}
+
+
+
+
+
+
+.mejs-container .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-float {
+  border: none;
+  background: none;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.8);
+  font-family: Helvetica, Arial;
+  font-size: 13px;
+  color: #FFF;
+}
+
+
+
+
+
+
+
 
 /* Animations on Show/Hide. Pick your own */
 /* http://daneden.github.io/animate.css/ */
@@ -162,5 +221,8 @@ audio, video {
     transform: scale3d(1, 1, 1);
   }
 }
+
+
+
 
 
